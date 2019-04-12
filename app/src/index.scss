@@ -1,0 +1,383 @@
+@import '~bootstrap/scss/bootstrap.scss';
+// @import '../imports/ui/accounts-bootstrap/main.scss';
+
+html, body {
+  width: 100%;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+table tr td, table tr th {
+  color: #f8f9fa;
+}
+
+#react-root {
+  min-height: 100%;
+  height: 1px;
+}
+
+.flex-home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.flex-home img {
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  max-width: 50%;
+  max-height: auto;
+}
+
+.app-container {
+  min-height: 100%;
+}
+
+.app-container .content {
+  padding-top:15px;
+}
+
+.btn-spaced {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.navbar {
+  box-shadow: 0 1px 1px -1px black;
+}
+
+.deck-description {
+  text-overflow: ellipsis;
+}
+
+.card-preview-label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card-image-tooltip {
+  display: block;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+}
+
+.card-image-tooltip-contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // flex-flow: row wrap;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.card-image-tooltip-contents div {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .card-image-tooltip-contents div img {
+    margin-top: 0%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-image-tooltip-contents div img {
+    margin-top: 15%;
+    max-height: 65%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-image-tooltip-contents div img {
+    margin-top: 15%;
+    max-height: 70%;
+  }
+}
+
+.card-discovery-panel {
+  max-height: 30vh;
+  min-height: 350px;
+  background-color: gray;
+  overflow: auto;
+}
+
+.card-discovery-panel .cards-container .card-count-controller {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-discovery-panel .cards-container .card-count-controller:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card-discovery-panel .cards-container .add-card-row:nth-child(even) {
+  background-color: #aaa;
+}
+
+.card-count-controller.selected {
+  font-weight: bold;
+  font-size: 125%;
+  text-decoration: underline;
+}
+
+.card-table {
+  table-layout: unset !important;
+}
+.card-table .name-column {
+  white-space: nowrap;
+}
+
+.card-table .subname {
+  white-space: nowrap;
+}
+
+.battle-icon-column {
+  // width: 1px;
+}
+.battle-icon {
+  width: 2em;
+  display: block;
+  box-shadow: inset 0px 0px 10px 0px rgba(100,100,100,1);
+}
+
+.battle-icon.orange {
+  background-color: #ffaf38;
+}
+
+.battle-icon.blue {
+  background-color: #3aabe1;
+}
+
+.battle-icon.green {
+  background-color: #33cc33;
+}
+
+.battle-icon.white {
+  background-color: #f5f3fa;
+}
+
+.battle-icon.none {
+  background-color:gray;
+}
+
+.beginners-deck-character {
+  text-align: center;
+}
+
+.beginners-deck-character img {
+  max-width: 100%;
+}
+
+.recent-decks {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.recent-decks img {
+  max-width: 100%;
+}
+
+.recent-decks .deck {
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
+// .recent-decks .deck:nth-child(odd) {
+//   background-color: #192733;
+// }
+
+.deck-list-page img {
+  max-width: 100%;
+}
+
+.deck-list-page-item img {
+  max-height: 150px;
+}
+
+.deck-list-page-item {
+  margin-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+}
+
+.deck-list-page-item:last-child {
+  border: none;
+}
+
+.deck-list-page-item:nth-child(even) {
+  // background-color: tan;
+}
+
+.deck-list-page-item:nth-child(odd) {
+  // background-color: gray;
+}
+
+.deck-list-page-item p {
+  margin-bottom: 0;
+}
+
+.deck-list-page-item .character-name {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.deck-list-page-item .character-sub-name {
+  font-size: 95%;
+  margin-bottom: .5rem;
+  margin-top: -.3rem;
+}
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 40vh;
+}
+
+.loading-indicator > .sk-spinner {
+  transform: scale(2);
+
+}
+
+.icon-button {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@import '{}/node_modules/react-bootstrap-table-next/dist/react-bootstrap-table2';*/
+.react-bootstrap-table table {
+  table-layout: fixed; }
+
+.react-bootstrap-table th.sortable {
+  cursor: pointer; }
+
+.react-bootstrap-table th .order > .dropdown > .caret {
+  margin: 10px 0 10px 5px;
+  color: #cccccc; }
+
+.react-bootstrap-table th .order > .dropup > .caret {
+  margin: 10px 0;
+  color: #cccccc; }
+
+.react-bootstrap-table th > .react-bootstrap-table-sort-order > .caret {
+  margin: 10px 6.5px; }
+
+.react-bootstrap-table th .order-4:before {
+  margin-left: 3.5px;
+  content: "\2191";
+  opacity: 0.4; }
+
+.react-bootstrap-table th .order-4:after {
+  content: "\2193";
+  opacity: 0.4; }
+
+.react-bootstrap-table th .caret-4-asc:before {
+  margin-left: 3.5px;
+  content: "\2191"; }
+
+.react-bootstrap-table th .caret-4-asc:after {
+  content: "\2193";
+  opacity: 0.4; }
+
+.react-bootstrap-table th .caret-4-desc:before {
+  margin-left: 3.5px;
+  content: "\2191";
+  opacity: 0.4; }
+
+.react-bootstrap-table th .caret-4-desc:after {
+  content: "\2193"; }
+
+.react-bootstrap-table th[data-row-selection] {
+  width: 30px; }
+
+.react-bootstrap-table th > .selection-input-4,
+.react-bootstrap-table td > .selection-input-4 {
+  margin: -4px; }
+
+.react-bootstrap-table td.react-bs-table-no-data {
+  text-align: center; }
+
+.react-bootstrap-table tr.expanding-row {
+  padding: 5px; }
+
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .animated {
+  animation-fill-mode: both; }
+
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .animated.bounceIn,
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .animated.bounceOut {
+  animation-duration: .75s; }
+
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .animated.shake {
+  animation-duration: .3s; }
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 50%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  30%, 70% {
+    transform: translate3d(10px, 0, 0); } }
+
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .shake {
+  animation-name: shake; }
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .bounceIn {
+  animation-name: bounceIn; }
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); } }
+
+.react-bootstrap-table td.react-bootstrap-table-editing-cell .bounceOut {
+  animation-name: bounceOut; }

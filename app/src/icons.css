@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?klyh21');
+  src:  url('/fonts/icomoon.eot?klyh21#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?klyh21') format('truetype'),
+    url('/fonts/icomoon.woff?klyh21') format('woff'),
+    url('/fonts/icomoon.svg?klyh21#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-titan:before {
+  content: "\e90b";
+}
+.icon-specialist:before {
+  content: "\e903";
+}
+.icon-ranged:before {
+  content: "\e904";
+}
+.icon-dinobot:before {
+  content: "\e905";
+}
+.icon-car:before {
+  content: "\e906";
+}
+.icon-autobot:before {
+  content: "\e907";
+}
+.icon-tank:before {
+  content: "\e908";
+}
+.icon-decepticon:before {
+  content: "\e90a";
+}
+.icon-spaceship:before {
+  content: "\e900";
+}
+.icon-truck:before {
+  content: "\e901";
+}
+.icon-motorcycle:before {
+  content: "\e902";
+}
+.icon-plane:before {
+  content: "\e909";
+}
+.icon-leader:before {
+  content: "\e911";
+}
+.icon-star:before {
+  content: "\e923";
+}
+.icon-melee:before {
+  content: "\e92b";
+}
+.icon-insecticon:before {
+  content: "\e92c";
+}
+.icon-attack:before {
+  content: "\e92d";
+}
+.icon-health:before {
+  content: "\e92e";
+}
+.icon-armor:before {
+  content: "\e92f";
+}
